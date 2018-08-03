@@ -1,7 +1,8 @@
 {
   "name": "nodeossblog",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Blog for firebase, with node js and Vue",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,15 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/OssFate/OssBlog.git"
   },
-  "keywords": [
-    "Blog",
-    "VueJS",
-    "Firebase"
-  ],
-  "author": "Oswaldo Mantilla",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/OssFate/OssBlog/issues"
   },
-  "homepage": "https://github.com/OssFate/OssBlog#readme"
+  "homepage": "https://github.com/OssFate/OssBlog#readme",
+  "dependencies": {
+    "firebase": "^5.3.0"
+  }
 }
