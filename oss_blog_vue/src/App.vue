@@ -1,20 +1,8 @@
 <template>
   <div id="app">
-    <OssBlog titleMsg="OssBlog"/>
+    <router-view/>
   </div>
 </template>
-
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import OssBlog from "./components/OssBlog.vue";
-
-@Component({
-  components: {
-    OssBlog
-  }
-})
-export default class App extends Vue {}
-</script>
 
 <style>
 #app {

@@ -14,13 +14,7 @@
             "spaces",
             4
         ],
-        "trailing-comma": [
-            true,
-            {
-                "multiline": "never",
-                "singleline": "never"
-            }
-        ],
+        "trailing-comma": false,
         "interface-name": false,
         "ordered-imports": false,
         "object-literal-sort-keys": false,

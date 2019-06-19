@@ -3,7 +3,7 @@
     <h1>{{ titleMsg }}</h1>
     <h3>{{ message }}</h3>
     <h3>{{ snapVal }}</h3>
-    <button @click="getData()">Get Data</button>
+    <button @click="setData()">Set Data</button>
     <!-- <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -40,7 +40,6 @@ import * as firebase from "firebase/app";
 import "firebase/database";
 
 const config = {
-  apiKey: "AIzaSyD54K7VBHkU1tSAAymI1JPmnS7lvmmukEM",
   authDomain: "ossbio-d6647.firebaseapp.com",
   databaseURL: "https://ossbio-d6647.firebaseio.com"
 };
@@ -58,7 +57,7 @@ export default class OssBlog extends Vue {
   private snapVal = [];
 
   public async setData() {
-    await this.testRef.set({
+    await this.testRef.push({
       name: "Oswald Mantilla",
       testing: "RealNames",
       array: ["one", "two", "three"]
