@@ -1,23 +1,23 @@
 {
-  "name": "oss_blog_vue",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "vue": "^2.5.17",
-    "vue-class-component": "^7.1.0",
-    "vue-property-decorator": "^8.2.1",
-    "vue-router": "^3.0.6"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-plugin-typescript": "^3.8.1",
-    "@vue/cli-service": "^3.8.4",
-    "typescript": "^3.5.2",
-    "vue-template-compiler": "^2.6.10"
-  }
+    "name": "oss_blog_vue",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "vue": "^2.5.17",
+        "vue-class-component": "^7.1.0",
+        "vue-property-decorator": "^8.2.1",
+        "vue-router": "^3.0.6"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.8.0",
+        "@vue/cli-plugin-typescript": "^3.8.1",
+        "@vue/cli-service": "^3.8.4",
+        "typescript": "^3.5.2",
+        "vue-template-compiler": "^2.6.10"
+    }
 }

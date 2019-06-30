@@ -11,10 +11,6 @@
         ],
         "rewrites": [
             {
-                "source": "creator",
-                "destination": "/creator"
-            },
-            {
                 "source": "**",
                 "destination": "/index.html"
             }
