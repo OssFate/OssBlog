@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -30,5 +30,22 @@
   --color-secondary-2-2: #417160;
   --color-secondary-2-3: #194938;
   --color-secondary-2-4: #0a3425;
+}
+
+button {
+  color: white;
+  border: 2px solid var(--color-primary-1);
+  border-radius: 4px;
+  background-color: var(--color-primary-4);
+  padding-block-start: 4px;
+  padding-block-end: 4px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  outline: none;
+}
+
+button:focus {
+  border: 2px solid var(--color-secondary-1-2);
+  background-color: var(--color-secondary-1-1);
 }
 </style>

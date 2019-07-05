@@ -4,10 +4,10 @@
       <div class="middle">
         <div class="inner">
           <h1>Creator HUB</h1>
-          <input v-model="user" placeholder="User">
-          <br>
-          <input v-model="pwd" type="password" placeholder="Password" @keyup.enter="FireLogin">
-          <br>
+          <input v-model="user" placeholder="User" />
+          <br />
+          <input v-model="pwd" type="password" placeholder="Password" @keyup.enter="FireLogin" />
+          <br />
           <button @click="FireLogin()">
             <b>Login</b>
           </button>
@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue, Emit } from "vue-property-decorator";
 import * as firebase from "firebase/app";
 
 import "firebase/firebase-auth";
@@ -30,28 +30,27 @@ import "firebase/firebase-auth";
 export default class Login extends Vue {
   public message: string = "Hello, World!";
 
-  private auth: firebase.auth.Auth;
+  private auth: firebase.auth.Auth = firebase.auth();
 
   private user: string = "";
   private pwd: string = "";
 
-  constructor() {
-    super();
-
-    this.auth = firebase.auth();
-  }
-
   private FireLogin() {
-    alert(`login in ${this.user} with pwd ${this.pwd}`);
-    // console.log("trying login");
     this.auth
       .signInWithEmailAndPassword(this.user, this.pwd)
       .then((data: any) => {
-        console.log(data);
+        // Hide this view, and show the admin view
+        this.logged(data);
       })
       .catch((error: any) => {
-        console.log(error);
+        // console.log(error);
+        // Show some kind of modal and send the user to try again
       });
+  }
+
+  @Emit()
+  private logged(data: any) {
+    return data;
   }
 }
 </script>

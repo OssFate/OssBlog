@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <OssBlog titleMsg="OssBlog"/>
+    <OssBlog titleMsg="OssBlog" />
   </div>
 </template>
 
