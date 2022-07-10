@@ -65,3 +65,4 @@ dist/
 
 # cache
 .firebase
+oss_blog_vue/package-lock.json
